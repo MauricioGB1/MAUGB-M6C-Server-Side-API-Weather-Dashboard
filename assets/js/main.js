@@ -1,5 +1,6 @@
 localStorage.clear();
 
+// Key access to API server weather forecast API
 // var APIKey = "82c839f58687061c1965d53c63bff21a";
 
 var cities = [];
