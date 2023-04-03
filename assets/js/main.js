@@ -2,12 +2,6 @@ localStorage.clear();
 
 // var APIKey = "82c839f58687061c1965d53c63bff21a";
 
-//   https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
-//   https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}
-
-//  https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
-
 var cities = [];
 
 var cityFormEl=document.querySelector("#city-search-form");
@@ -68,7 +62,7 @@ var displayWeather = function(weather, searchCity){
 
    //create a span element to hold temperature data
    var temperatureEl = document.createElement("span");
-   temperatureEl.textContent = "Temperature: " + weather.main.temp + " °F";
+   temperatureEl.textContent = "Temperature:  " + weather.main.temp + " °F";
    temperatureEl.classList = "list-group-item"
   
    //create a span element to hold Humidity data
@@ -81,56 +75,14 @@ var displayWeather = function(weather, searchCity){
    windSpeedEl.textContent = "Wind Speed: " + weather.wind.speed + " MPH";
    windSpeedEl.classList = "list-group-item"
 
-   //append to container
+   //append section 
    weatherContainerEl.appendChild(temperatureEl);
-
-   //append to container
-   weatherContainerEl.appendChild(humidityEl);
-
-   //append to container
-   weatherContainerEl.appendChild(windSpeedEl);
-
-   var lat = weather.coord.lat;
-   var lon = weather.coord.lon;
-   getUvIndex(lat,lon)
-}
-
-var getUvIndex = function(lat,lon){
-    var apiKey = "82c839f58687061c1965d53c63bff21a";
-    var apiURL = `https://api.openweathermap.org/data/2.5/uvi?appid=${apiKey}&lat=${lat}&lon=${lon}`
-    fetch(apiURL)
-    .then(function(response){
-        response.json().then(function(data){
-            displayUvIndex(data)
-           // console.log(data)
-        });
-    });
-    //console.log(lat);
-    //console.log(lon);
-}
  
-var displayUvIndex = function(index){
-    var uvIndexEl = document.createElement("div");
-    uvIndexEl.textContent = "UV Index: "
-    uvIndexEl.classList = "list-group-item"
-
-    uvIndexValue = document.createElement("span")
-    uvIndexValue.textContent = index.value
-
-    if(index.value <=2){
-        uvIndexValue.classList = "favorable"
-    }else if(index.value >2 && index.value<=8){
-        uvIndexValue.classList = "moderate "
-    }
-    else if(index.value >8){
-        uvIndexValue.classList = "severe"
-    };
-
-    uvIndexEl.appendChild(uvIndexValue);
-
-    //append index to current weather
-    weatherContainerEl.appendChild(uvIndexEl);
+   weatherContainerEl.appendChild(humidityEl);
+   
+   weatherContainerEl.appendChild(windSpeedEl);
 }
+
 
 var get5Day = function(city){
     var apiKey = "82c839f58687061c1965d53c63bff21a";
@@ -192,7 +144,6 @@ var display5Day = function(weather){
        //append to five day container
         forecastContainerEl.appendChild(forecastEl);
     }
-
 }
 
 var pastSearch = function(pastSearch){
