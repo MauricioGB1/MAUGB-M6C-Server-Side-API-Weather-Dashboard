@@ -46,7 +46,7 @@ The user can keep consulting additional cities and the names will remain on the 
 
 Deployment Links:
 
-Weather Dashboard- 5 Day Weather forecas  Web deployment link access:
+Weather Dashboard- 5 Day Weather forecast  Web deployment link access:
 
 https://mauriciogb1.github.io/MAUGB-M6C-Server-Side-API-Weather-Dashboard/
 
