@@ -58,9 +58,25 @@ https://github.com/MauricioGB1/MAUGB-M6C-Server-Side-API-Weather-Dashboard
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
 
-![alt text](./assets/
+![alt text](./assets/images/image1.png)
+
+
+![alt text](./assets/images/image2.png)
+
+
+![alt text](./assets/images/img3.png)
+
+
+![alt text](./assets/images/img4.png)
+
+
+![alt text](./assets/images/img5.png)
+
+
+![alt text](./assets/images/img6.png)
+
+
 
 
 ## Credits
