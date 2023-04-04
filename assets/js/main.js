@@ -21,7 +21,7 @@ var formSumbitHandler = function(event){
         cities.unshift({city});
         cityInputEl.value = "";
     } else{
-        alert("Please enter a City");
+        alert("Please enter a City that you would like to consult weather forecast");
     }
     saveSearch();
     pastSearch(city);
