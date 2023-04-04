@@ -59,20 +59,30 @@ https://github.com/MauricioGB1/MAUGB-M6C-Server-Side-API-Weather-Dashboard
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 
+Initial View of the Weather Dashboard Application
+
 ![alt text](./assets/images/image1.png)
 
+
+City name is entere to consult the wether forecast
 
 ![alt text](./assets/images/image2.png)
 
 
+User can check multiple cities
+
 ![alt text](./assets/images/img3.png)
 
+
+Cities are saved locally so the user does not have to type again
 
 ![alt text](./assets/images/img4.png)
 
 
 ![alt text](./assets/images/img5.png)
 
+
+In case of empty data on the city section 
 
 ![alt text](./assets/images/img6.png)
 
