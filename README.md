@@ -44,11 +44,24 @@ If a user wants to check the temperature for another city, then just needs to en
 The selected cities will be kept on the local storage. 
 The user can keep consulting additional cities and the names will remain on the left side as a list so they can be reused and consulted again in a different time without need to type again this specific city.
 
+Deployment Links:
+
+Weather Dashboard- 5 Day Weather forecas  Web deployment link access:
+
+https://mauriciogb1.github.io/MAUGB-M6C-Server-Side-API-Weather-Dashboard/
+
+
+Link to GitHub application depository:
+
+https://github.com/MauricioGB1/MAUGB-M6C-Server-Side-API-Weather-Dashboard
 
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](assets/images/screenshot.png)
+
+![alt text](./assets/
+
 
 ## Credits
 
@@ -60,7 +73,3 @@ https://openweathermap.org/forecast5
 ## License
 
 This application runs under MIT license.
-
-
-
-
